@@ -30,8 +30,6 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
-
 const props = defineProps(["item", "hideDetails"]);
 
 const item = props.item || {};
