@@ -26,6 +26,16 @@ Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
+## Migración de assets desde proyecto fuente
+
+He añadido `app/styles/global.css`, composables y páginas migradas desde tu proyecto Vue.
+
+Para copiar las imágenes utilizadas por la app, hay un script útil:
+
+	scripts/copy-assets.sh
+
+Edita la variable SOURCE_DIR dentro del script para apuntar a la carpeta que contiene tus imágenes (por ejemplo `~/m06/catClickers/img`) y luego ejecútalo.
+
 npm run dev
 
 # pnpm

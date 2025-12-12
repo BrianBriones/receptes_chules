@@ -2,22 +2,27 @@
   <div class="favorites-page">
     <h1>Els teus Favorits</h1>
     <div v-if="favorites.length === 0" class="no-favorites">
-      <p>Encara no tens cap favorit. Afegeix-ne alguns des de la pàgina de cerca!</p>
+      <p>
+        Encara no tens cap favorit. Afegeix-ne alguns des de la pàgina de cerca!
+      </p>
     </div>
     <div v-else class="favorites-grid">
-      <ItemCard 
-        v-for="item in favorites" 
-        :key="item.idMeal || item.id" 
+      <ItemCard
+        v-for="item in favorites"
+        :key="item.idMeal || item.id"
         :item="item"
         :hide-details="true"
       >
         <template #actions>
-          <button @click="favoritesStore.removeFavorite(item.idMeal)" class="remove-button">
+          <button
+            @click="favoritesStore.removeFavorite(item.idMeal)"
+            class="remove-button"
+          >
             🗑️ Eliminar
           </button>
-          <router-link :to="`/item/${item.idMeal}`" class="details-button">
+          <NuxtLink :to="`/item/${item.idMeal}`" class="details-button">
             Detalls
-          </router-link>
+          </NuxtLink>
         </template>
       </ItemCard>
     </div>
@@ -25,8 +30,8 @@
 </template>
 <script>
 import { useFavoritesStore } from "../stores/favoritesStore";
-import ItemCard from '@/Components/ItemCard.vue';
-import { computed } from 'vue';
+import ItemCard from "@/Components/ItemCard.vue";
+import { computed } from "vue";
 
 export default {
   components: { ItemCard },

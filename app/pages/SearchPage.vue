@@ -26,9 +26,9 @@
           >
             {{ isFavorite(item.idMeal || item.id) ? "❤️" : "🤍" }}
           </button>
-          <router-link :to="`/item/${item.idMeal}`" class="details-button">
+          <NuxtLink :to="`/item/${item.idMeal}`" class="details-button">
             Detalls
-          </router-link>
+          </NuxtLink>
         </template>
       </ItemCard>
     </div>

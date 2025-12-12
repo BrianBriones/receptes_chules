@@ -3,14 +3,12 @@
     <div class="nav-content">
       <div class="logo">🍳 ReceptesApp</div>
       <div class="nav-links">
-        <router-link to="/" class="nav-item" active-class="active"
-          >Inici</router-link
+        <NuxtLink to="/" class="nav-item" active-class="active">Inici</NuxtLink>
+        <NuxtLink to="/search" class="nav-item" active-class="active"
+          >Cerca</NuxtLink
         >
-        <router-link to="/search" class="nav-item" active-class="active"
-          >Cerca</router-link
-        >
-        <router-link to="/favorites" class="nav-item" active-class="active"
-          >Favorits</router-link
+        <NuxtLink to="/favorites" class="nav-item" active-class="active"
+          >Favorits</NuxtLink
         >
       </div>
     </div>

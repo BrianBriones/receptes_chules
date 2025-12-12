@@ -3,9 +3,10 @@
     <div class="welcome-card">
       <h1>Benvingut a les receptes més chules 🍳</h1>
       <p>Explora, cerca i guarda els teus plats preferits en un sol lloc.</p>
-      <router-link to="/search" class="cta-button button"
-        >Començar a cercar</router-link
+      <NuxtLink to="/search" class="cta-button button"
+        >Començar a cercar</NuxtLink
       >
+
       <div class="decorative-line"></div>
     </div>
 
@@ -107,7 +108,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 36px;
-    padding: 56px 20px;
+  padding: 56px 20px;
 }
 .feature h3 {
   margin: 0 0 8px;
@@ -117,7 +118,9 @@ p {
   margin: 0;
 }
 
-.feature.card{padding:20px}
+.feature.card {
+  padding: 20px;
+}
 
 @media (max-width: 800px) {
   .feature-grid {
