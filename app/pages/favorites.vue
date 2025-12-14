@@ -18,7 +18,7 @@
             @click="favoritesStore.removeFavorite(item.idMeal || item.id)"
             class="remove-button"
           >
-            🗑️ Eliminar
+             Eliminar
           </button>
           <NuxtLink :to="`/item/${item.idMeal}`" class="details-button">
             Detalls
@@ -29,8 +29,9 @@
   </div>
 </template>
 <script setup>
+import { storeToRefs } from "pinia";
 const favoritesStore = useFavoritesStore();
-const favorites = favoritesStore.favorites;
+const { favorites } = storeToRefs(favoritesStore);
 </script>
 <style scoped>
 .favorites-page {
