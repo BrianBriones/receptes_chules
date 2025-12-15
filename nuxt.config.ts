@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tsconfigPaths from "vite-tsconfig-paths";
+const COMPONENT_PATHS = [
+  { path: 'Components', pathPrefix: false }
+];
 
 export default defineNuxtConfig({
+  components: COMPONENT_PATHS,
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   srcDir: 'app/',

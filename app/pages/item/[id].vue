@@ -10,8 +10,6 @@
 
       <div class="ai-container">
         <h3>✨ D'on ve aquesta recepta? (IA)</h3>
-
-        <!-- Passem el nom de l'item actual a la funció -->
         <button
           @click="generateCreativeText(item.strMeal)"
           :disabled="isGenerating"

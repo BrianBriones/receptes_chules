@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="nav-content">
-      <div class="logo">🍳 ReceptesApp</div>
+      <div class="logo">🍳 Receptes Chules</div>
       <div class="nav-links">
         <NuxtLink to="/" class="nav-item" active-class="active">Inici</NuxtLink>
         <NuxtLink to="/search" class="nav-item" active-class="active"
